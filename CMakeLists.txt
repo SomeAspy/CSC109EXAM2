@@ -1,11 +1,11 @@
 cmake_minimum_required(VERSION 3.23)
-project(TEMPLATE)
+project(CSC109EXAM2)
 
 set(CMAKE_CXX_STANDARD 14)
 
-set(CXXTEST_INCLUDE_DIR c:/cxxtest-4.4)
+set(CXXTEST_INCLUDE_DIR C:/Users/aiden/Documents/cpp/cxxtest/)
 
-set(CXXTEST_PYTHON_TESTGEN_EXECUTABLE c:/cxxtest-4.4/bin/cxxtestgen)
+set(CXXTEST_PYTHON_TESTGEN_EXECUTABLE C:/Users/aiden/Documents/cpp/cxxtest/bin/cxxtestgen)
 
 find_package(CxxTest REQUIRED)
 
@@ -15,10 +15,10 @@ if(CXXTEST_FOUND)
 
     CXXTEST_ADD_TEST(unittest
             runner.cpp  # THIS IS GENERATED BUT YOU NEED TO ADD IT HERE
-            ${CMAKE_CURRENT_SOURCE_DIR}/Functions.cpp  # add source files
+            ${CMAKE_CURRENT_SOURCE_DIR}/Student.cpp  # add source files
             ${CMAKE_CURRENT_SOURCE_DIR}/Tests.h  # YOUR TEST DESCRIPTION FILE
             )
 
 endif()
 
-add_executable(TEMPLATE Functions.cpp Tests.h main.cpp Classes.h)
+add_executable(CSC109EXAM2 runner.cpp Student.cpp Tests.h Student.h)

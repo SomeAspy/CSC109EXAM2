@@ -3,9 +3,18 @@
         "hloi",
     ],
     "files.associations": {
+        "*.html": "html",
         "new": "cpp",
         "iosfwd": "cpp",
-        "sstream": "cpp"
+        "sstream": "cpp",
+        "string": "cpp",
+        "array": "cpp",
+        "string_view": "cpp",
+        "initializer_list": "cpp",
+        "ranges": "cpp",
+        "utility": "cpp",
+        "ostream": "cpp",
+        "iostream": "cpp"
     },
     "files.insertFinalNewline": true // Needed for webcat
 }
